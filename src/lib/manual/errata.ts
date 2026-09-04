@@ -1,0 +1,68 @@
+import type { Erratum } from "./types";
+
+export const ERRATA: Erratum[] = [
+  {
+    id: "one-computer",
+    date: "2026-09-03",
+    title: "Bot 不是一人一台电脑",
+    old: "橙皮书与不少转述写「每个 Bot 拥有自己的云端电脑」。",
+    now: "官方文档：账号下所有 Bot 共用一台持久云电脑。文件、浏览器登录、命令行凭据全共享。Bot 不是安全边界。每个 Bot 只是这台电脑上的一块独立屏幕。",
+    source: "docs.x.ai/grok-bot · 2026-09-03",
+  },
+  {
+    id: "price-floor",
+    date: "2026-08-26",
+    title: "门槛已从 $60 / $200 降到 $20",
+    old: "v260823 写：轻度自用最低付费门槛是 Cursor Pro+（$60/月）；早期报道甚至把闸门写成 Ultra / Heavy。",
+    now: "8 月 26 日官方扩权：Cursor Pro（$20）、SuperGrok（$30），以及全部 Cursor Teams 席位，都包含 Grok Bot。额度与 Grok / Cursor 主套餐分开计。同时持有两份订阅时，走额度更高的那一份。",
+    source: "x.ai/news/grok-bot-more-plans",
+  },
+  {
+    id: "linux-android",
+    date: "2026-09-02",
+    title: "Linux 与 Android 已正式上线",
+    old: "橙皮书冲突点里，Linux 桌面端、Android 上线时间被标成待定。",
+    now: "官方 FAQ：macOS（Apple silicon / Intel）、Windows（x64 / Arm64）、Linux（x64 / Arm64，.deb / .rpm / AppImage）、iPhone iOS 18+、Android 9+。iPad 首发不支持。",
+    source: "docs.x.ai/grok-bot/faq",
+  },
+  {
+    id: "faq-lag",
+    date: "2026-09-02",
+    title: "入门页资格表滞后于扩权公告",
+    old: "Get started 与 FAQ 仍写「SuperGrok Plus / Heavy、Cursor Pro+ / Ultra、Teams」。",
+    now: "以 8 月 26 日产品公告为准：所有 SuperGrok、所有付费 Cursor、所有 Cursor Teams 都包含。入门文档尚未完全同步，不要被旧资格表挡在门外。",
+    source: "官方公告优先于 FAQ 表格",
+  },
+  {
+    id: "mcp-http",
+    date: "2026-09-03",
+    title: "MCP 只接公网 HTTP，不接本地 stdio",
+    old: "社区长文里出现 npx stdio 示例，容易被当成官方接法。",
+    now: "Grok Bot 只支持远程 HTTPS 的 streamable HTTP / SSE MCP。本地 stdio 示例多半跑在云电脑 CLI 或本机 Cursor，不是 Bot 官方插件路径。",
+    source: "awesome-grok-bot / 官方插件说明",
+  },
+  {
+    id: "privacy-mode",
+    date: "2026-09-02",
+    title: "Legacy Privacy Mode 用不了",
+    old: "部分用户按 Cursor 隐私模式理解，以为能关云端存储。",
+    now: "Grok Bot 必须云端存数据。仍开着 Legacy Privacy Mode 的账号要先改成受支持的数据设置，否则电脑起不来。",
+    source: "docs.x.ai/grok-bot/get-started",
+  },
+  {
+    id: "x-plugin",
+    date: "2026-08-29",
+    title: "Grok Bot 已接通 X",
+    old: "早期只能靠云浏览器点 X。",
+    now: "8 月 29 日官方宣布 Grok Bot now works with X。付费用户可获开发者账号与 API 额度（以产品内说明为准）。搜帖、时间线、mentions 走插件，外发仍应放审批。",
+    source: "x.ai/news",
+  },
+  {
+    id: "primitives",
+    date: "2026-09-03",
+    title: "产品只暴露五个原语",
+    old: "社区把 chats、sessions、context windows、system prompts、sandboxes 一股脑当成要学的概念。",
+    now: "设计文把界面收成五个东西：Bots、Chats、Prompts（可存成 Skill 或触发成 Routine）、Tools、Artifacts。侧栏的主对象是 Bot 花名册，不是聊天历史。",
+    source: "Designing Grok Bot for a world of persistent agents",
+  },
+];

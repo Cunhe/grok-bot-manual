@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" role="img" aria-label="Grok Bot">
+  <rect width="16" height="16" fill="#0A0A0B"/>
+  <rect x="2.5" y="2.5" width="11" height="11" fill="none" stroke="#ECE8DE" stroke-width="1"/>
+  <path d="M5 11.5 L11 4.5" stroke="#ECE8DE" stroke-width="1.75" stroke-linecap="square"/>
+</svg>
