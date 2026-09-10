@@ -24,9 +24,9 @@ npm run dev
    | `VITE_AUTH_ENABLED` | `false` |
 
 6. 不要填写 Output Directory。不要接数据库。Deploy。
-7. 分享卡片（`og.jpg`）需要**自定义域名**。`*.vercel.app` 不会作为卡片图地址。把 `000666.best` 的子域绑到该项目即可。
+7. 分享卡片（`og.jpg`）需要**自定义域名**。`*.vercel.app` 不会作为卡片图地址。
 
-自定义域名可指到 `000666.best` 的子域，或直接用 Vercel 分配的 `*.vercel.app`。
+
 
 ## 版权
 
